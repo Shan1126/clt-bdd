@@ -11,3 +11,6 @@ Feature: As a jootza customer, I want to be able to navigate to landing poage so
    When I click on "Register now"
    Then I should see "Register" Page
    
+   Given I am on the Jootza portal
+   When I click on "Sign off"
+   Then I should see "Sign off" Page
