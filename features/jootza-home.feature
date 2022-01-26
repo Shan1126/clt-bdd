@@ -10,7 +10,7 @@ Feature: As a jootza customer, I want to be able to navigate to landing poage so
   Scenario: Customers are displayed with error message when invalid credentials are entered
    Given I am on the Jootza portal
    When I click on "Login"
-   And I enter username "Bhavani"
-   And I enter password "Priya"
+   And I enter username "johndoe"
+   And I enter password "Password123"
    And I click on "LoginBtn"
    Then I should see "errorMessage"
