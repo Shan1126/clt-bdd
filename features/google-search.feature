@@ -11,3 +11,11 @@ Feature: Searching for vote cards app
   Scenario: Google search for course of life app
     When I search Google for "CourseOf.Life"
     Then I should see some results
+
+    Scenario: Google search for gifts
+    When I search Google for "gifts"
+    Then I should see some various gift options
+
+    Scenario: Google search for books
+    When I search Google for "books"
+    Then I should see some various books
