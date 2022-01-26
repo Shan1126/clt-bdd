@@ -11,7 +11,7 @@ module.exports = {
         username: by.name('username'),
         password: by.name('password'),
         LoginBtn: '//*[@id="btn-login"]/button',
-        errorMessage: '//*[@id="toast-container"]/mdb-toast-component/div3543245235'
+        errorMessage: '//*[@id="toast-container"]/mdb-toast-component/div'
     },
     clickElement: async function(objectKey) {
         // eslint-disable-next-line no-console
