@@ -9,7 +9,8 @@ module.exports = {
         username: by.name('email'),
         password: by.name('pass'),
         LoginBtn: '/html/body/div[1]/div[2]/div[1]/div/div/div/div[2]/div/div[1]/form/div[2]/button',
-        errorMessage: '//*[@id="email_container"]/div[2]'
+        errorMessage: '//*[@id="email_container"]/div[2]',
+        errorMessage2: '//*[@id="loginform"]/div[2]/div[2]'
     },
     clickElement: async function(objectKey) {
         // eslint-disable-next-line no-console
@@ -40,6 +41,8 @@ module.exports = {
         var selector = page.NirFacebook.elements[objectKey];
 
         await driver.sleep(5000);
+        console.log('wrong password');
         return driver.findElement(By.xpath(selector));
+        
     }
 };
