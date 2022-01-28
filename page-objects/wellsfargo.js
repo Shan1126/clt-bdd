@@ -1,5 +1,4 @@
 const helpers = require("../runtime/helpers");
-//const { driver } = require("selenium-webdriver/chrome");
 
 
 module.exports = {
