@@ -12,6 +12,14 @@ module.exports = function () {
     this.Then(/^I should see "([^"]*)"$/, function (objectKey) {
         return page.wellsFargo.elementExists(objectKey);
     });
+
+    this.When(/^I enter username "([^"]*)"$/ , function(objKey1) {
+        return page.wellsFargo.inputUserName(objKey1);
+    });
+
+    this.When(/^I enter password "([^"]*)"$/ , function(objKey1) {
+        return page.wellsFargo.inputPassword(objKey1);
+    });
 };
 
 
