@@ -47,7 +47,7 @@ module.exports = {
         DiversityAndAccessibilityPage:'/html/body',
         Sitemap:'/html/body/div/footer/div/div[1]/nav/div/ul/li[10]/a',
         SitemapPage: '/html/body',
-        letsLiveHisDream:'/html/body/div/div[2]/div[5]/div/div[1]/div',
+        letsLiveHisDream:'/html/body/div/div[2]/div[5]/div/div[2]',
         letsLiveHisDreamPage: '/html/body',
         readyForWhatsNext:'/html/body/div/div[2]/div[5]/div/div[2]',
         readyForWhatsNextPage: '/html/body',
