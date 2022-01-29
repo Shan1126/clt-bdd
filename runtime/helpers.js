@@ -230,13 +230,14 @@ module.exports = {
         var timeout = waitInMilliseconds || DEFAULT_TIMEOUT;
 
         // if the locator starts with '//' assume xpath, otherwise css
-        var selector = (localizador.indexOf('//') === 0) ? "xpath" : "css";
+        //var selector = (elementSelector.indexOf('//') === 0) ? "xpath" : "css";
+        var selector = (elementSelector.indexOf('/') === 0) ? By.xpath(elementSelector) : by.css(elementSelector);
 
         // readable error message
-        var timeoutMessage = attributeName + ' still exists after ' + waitInMilliseconds + ' milliseconds';
+        var timeoutMessage = 'The attribute still exists after ' + waitInMilliseconds + ' milliseconds';
 
         // wait until the element exists
-        return driver.wait(selenium.until.elementLocated({ [selector]: elementSelector }), timeout, timeoutMessage);
+        return driver.wait(selenium.until.elementLocated(selector), timeout, timeoutMessage);
     },
 
     /**
