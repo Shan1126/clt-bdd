@@ -2,11 +2,11 @@ const { By } = require("selenium-webdriver");
 const helpers = require("../runtime/helpers");
 module.exports = {
 
-    url: 'https://www.udemy.com',
+    url: 'https://www.yahoo.com',
 
     elements: {
-        Login: '//a[contains(@href,"/cart/")]',
-        Login1: '//*[@id="ybar-inner-wrap"]/div[3]/div/div[3]/div[1]/div/a',
+        Login1: '//a[contains(@href,"/cart/")]',
+        Login: '//*[@id="ybar-inner-wrap"]/div[3]/div/div[3]/div[1]/div/a',
         username: By.id('login-username'),
         nextbtn: '//*[@id="login-signin"]',
         errorMessage: '//*[@id="username-error"]'
@@ -15,6 +15,7 @@ module.exports = {
         console.log(keyword);
         var selector = page.yahoomail.elements[keyword];
         await driver.sleep(6000);
+        console.log(selector);
         // return driver.findElement(selector).click();
         return driver.findElement(By.xpath(selector)).click();
     },

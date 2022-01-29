@@ -1,7 +1,7 @@
 
 module.exports = function () {
 
-    this.Given('I am on the Yahoo portal', function () {
+    this.Given('I am on the yahoo portal', function () {
         return helpers.loadPage(page.yahoomail.url);
     });
 
