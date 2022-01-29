@@ -38,7 +38,7 @@ module.exports = {
     },
 
 
-    selectDropDown: async function (selectName, value)
+    selectDropDown: async function (selectName, value)//drop down menu
     {
         var selector = page.rprana.elements[selectName];
         await driver.sleep(2000); // in millseconds 1000ms = 1 second
