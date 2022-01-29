@@ -6,7 +6,7 @@ module.exports = {
 
     elements: {
         Login: '//a[contains(@href,"/cart/")]',
-        Login1:'//*[@id="ybar-inner-wrap"]/div[3]/div/div[3]/div[1]/div/a',
+        Login1: '//*[@id="ybar-inner-wrap"]/div[3]/div/div[3]/div[1]/div/a',
         username: By.id('login-username'),
         nextbtn: '//*[@id="login-signin"]',
         errorMessage: '//*[@id="username-error"]'
@@ -14,14 +14,14 @@ module.exports = {
     clickElement: async function (keyword) {
         console.log(keyword);
         var selector = page.yahoomail.elements[keyword];
-         await driver.sleep(6000);
+        await driver.sleep(6000);
         // return driver.findElement(selector).click();
         return driver.findElement(By.xpath(selector)).click();
     },
     inputUserName: async function (val) {
-    
-        var selector = page.yahoomail.elements['username']; 
-        await driver.sleep(5000); 
+
+        var selector = page.yahoomail.elements['username'];
+        await driver.sleep(5000);
         return driver.findElement(selector).sendKeys(val);
 
     },

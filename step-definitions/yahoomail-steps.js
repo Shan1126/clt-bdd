@@ -1,5 +1,4 @@
 
-
 module.exports = function () {
 
     this.Given('I am on the Yahoo portal', function () {
