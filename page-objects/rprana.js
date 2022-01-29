@@ -30,7 +30,7 @@ module.exports = {
         return driver.executeScript('return arguments[0].click();', element);
     },
 
-    inputTextBoxData: async function(textboxElementName, value)
+    inputTextBoxData: async function(textboxElementName, value)//input data
     {
         var selector = page.rprana.elements[textboxElementName];
         await driver.sleep(2000); // in millseconds 1000ms = 1 second
