@@ -5,7 +5,7 @@ module.exports = function () {
     });
 
     this.When(/^I click upon "([^"]*)"$/, function (objectKey) {
-        return page.rprana.clickElement(objectKey);
+        return page.rprana.clickElement(objectKey);//
     });
 
     this.When(/^I give "([^"]*)" "([^"]*)"$/, function (eleName, objKey1) {
