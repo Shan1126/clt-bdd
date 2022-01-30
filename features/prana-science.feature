@@ -2,7 +2,7 @@ Feature: As a prana science customer, I want to be able to navigate to landing p
 product information
   
   @prana
-  Scenario: Customer is displayed with pranascience.org landing page
+  Scenario: Customer is displayed with pranascience.org/login landing page
    Given I am on the Pranascience portal
-   When I click on "Signin" link
+   When I click on "signup" link
    Then I should see "LoginHeader1" screen
