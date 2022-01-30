@@ -1,4 +1,4 @@
-Feature: As a user of pranascience I want to test the function of Register
+Feature: As a user of pranascience I want to test the function of Register page
 
 @registerPranaScience
 Scenario: User is displayed with the pranaScience home page
