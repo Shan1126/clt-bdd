@@ -45,6 +45,54 @@ this.When (/^click on the button "([^"]*)"$/,function(objectkey){
 
 this.Then (/^I should be in the "([^"]*)"$/,function(objectkey){
     return page.pranascience.navigatePage(objectkey)
+}),
+
+this.When (/^I enter userName "([^"]*)"$/,function(objectkey){
+    return page.pranascience.inputUserName(objectkey)
+}),
+
+this.When (/^I click the button "([^"]*)"$/,function(objectkey){
+    return page.pranascience.clickButton(objectkey)
+}),
+
+this.When (/^I enter PW "([^"]*)"$/,function(objectkey){
+    return page.pranascience.inputPW(objectkey)
+}),
+
+this.When (/^hit "([^"]*)"$/,function(objectkey){
+    return page.pranascience.clickButton(objectkey)
+}),
+
+this.Then (/^I see "([^"]*)"$/,function(objectkey){
+    return page.pranascience.displayMessage(objectkey)
+}),
+
+this.Then (/^I should be logged in on hitting the "([^"]*)"$/,function(objectkey){
+    return page.pranascience.clickButton(objectkey)
+
+}),
+this.When (/^I click the link "([^"]*)"$/,function(objectkey){
+    return page.pranascience.clickButton(objectkey)
+}),
+
+this.Then (/^I should land on the "([^"]*)"$/,function(objectkey){
+    return page.pranascience.displayMessage(objectkey)
+}),
+
+this.When (/^I click on the link in the bottom "([^"]*)"$/,function(objectkey){
+    return page.pranascience.clickButton(objectkey)
+}),
+
+this.Then (/^I should be directed to the "([^"]*)"$/,function(objectkey){
+    return page.pranascience.displayMessage(objectkey)
+}),
+
+this. Then (/^I should receive a code on clicking the "([^"]*)"$/,function(objectkey){
+    return page.pranascience.clickButton(objectkey)
+}),
+
+this.When (/^I select countryCode from the dropdown "([^"]*)"$/,function(objectkey){
+    return page.pranascience.selectList(objectkey)
 })
 
 
