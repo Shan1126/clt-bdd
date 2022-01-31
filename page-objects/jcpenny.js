@@ -8,7 +8,7 @@ const helpers = require("../runtime/helpers");
         signin:'//*[@id="accountBlock"]/div/div/div/button/div/div/p[2]',
         signinPage:'//*[@id="mainContainerBlock"]/div[6]/div/div[2]/div/div[1]/div[2]/form/div/div/div[1]/div',
         email:by.id('loginEmail'),
-        //passWord:'//*[@id="mainContainerBlock"]/div[6]/div/div[2]/div/div[1]/div[2]/form/div/div/div[3]',
+        passWord:by.id('pwd'),
         signinBtn:'//*[@id="mainContainerBlock"]/div[6]/div/div[2]/div/div[1]/div[2]/form/div/div/div[5]/button',
         errorMessage:'//*[@id="mainContainerBlock"]/div[6]/div/div[2]/div/div[1]/div[2]/form/div[1]/div/div/div/p',
         searchBox:by.id('searchInputId'),
@@ -28,7 +28,17 @@ const helpers = require("../runtime/helpers");
         createButton:'//*[@id="mainContainerBlock"]/div[6]/div/div[2]/div/div/div[3]/div/div/form/div/div[2]/div/div/button',
         forgotPassword:'//*[@id="mainContainerBlock"]/div[6]/div/div[2]/div/div[1]/div[2]/div/div/p/button',
         send:'//*[@id="mainContainerBlock"]/div[6]/div/div[2]/div/div/div[2]/div/div/div/form/div[2]/div[2]/button',
-        emailaddress:by.id('forgotPasswordSliderEmail')
+        emailaddress:by.id('forgotPasswordSliderEmail'),
+        men:'//*[@id="comp_imagehotspots_7"]/div/map/area[1]',
+        mensClothing:'//*[@id="gallery-title"]/h1',
+        girls:'//*[@id="comp_imagehotspots_7"]/div/map/area[2]',
+        boys:'//*[@id="comp_imagehotspots_7"]/div/map/area[3]',
+        women:'//*[@id="comp_imagehotspots_7"]/div/map/area[4]',
+        babyKidsGirls:'//*[@id="gallery-title"]/h1',
+        babyKidsBoy:'//*[@id="gallery-title"]/h1',
+        womenShoes:'//*[@id="gallery-title"]/h1',
+       
+
     },
 
  clickElement:async function(objectkey){
@@ -38,21 +48,21 @@ const helpers = require("../runtime/helpers");
 },
 
 elementExists:async function(objectkey){
-    var signin = page.jcpenny.elements[objectkey];
+    var selector = page.jcpenny.elements[objectkey];
     await driver.sleep(5000);
-    return driver.findElement(By.xpath(signin))
+    return driver.findElement(By.xpath(selector))
 },
  enterInput:async function(objectkey){
      var input = page.jcpenny.elements[objectkey]
      await driver.sleep(5000)
-     return driver.findElement(input).sendKeys('kanak.priya')
+     return driver.findElement(input).sendKeys('priya21345@gmail.com')
 },
 
-/* enterPassWord:async function(objectkey){
+enterPassWord:async function(objectkey){
     var password =page.jcpenny.elements[objectkey]
     await driver.sleep(5000);
-    return driver.findElement(By.xpath(password)).sendKeys('priya') 
-}, */
+    return driver.findElement(password).sendKeys('Password@1234') 
+}, 
 
 displayMessage:async function(objectkey){
     var message = page.jcpenny.elements[objectkey];
@@ -112,7 +122,31 @@ inputAddress:async function(value){
     var emailid =page.jcpenny.elements['emailaddress']
     await driver.sleep(5000)
     return driver.findElement(emailid).sendKeys(value)
+},
+
+scrollto:async function(objectkey){
+    var selector = page.jcpenny.elements[objectkey]
+    await driver.sleep(5000)
+    return helpers.scrollToElement(driver.findElement(By.xpath(selector)))
+},
+
+inputUserName:async function(value){
+    var selector = page.jcpenny.elements['email']
+    await driver.sleep(2000)
+    return driver.findElement(selector).sendKeys(value)
+},
+
+inputPW:async function(value){
+    var selector = page.jcpenny.elements['passWord']
+    await driver.sleep(2000)
+    return driver.findElement(selector).sendKeys(value)
 }
+
+
+
+
+
+
 
 
 

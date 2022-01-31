@@ -17,17 +17,18 @@ this.When (/^I enter the "([^"]*)"$/,function(objectkey){
     return page.jcpenny.enterInput(objectkey)
 }),
 
-/*this.When (/^I enter my "([^"]*)"$/,function(objectkey){
+this.When (/^I enter my "([^"]*)"$/,function(objectkey){
     return page.jcpenny.enterPassWord(objectkey)
-} ),*/
+} ),
 
- this.When (/^I click on the button "([^"]*)"$/,function(objectkey){
+ this.Then (/^I should be able to signin on clicking the button "([^"]*)"$/,function(objectkey){
+
      return page.jcpenny.clickElement(objectkey)
  } ),
  
  this.Then (/^I should be displayed an "([^"]*)"$/,function(objectkey){
      return page.jcpenny.displayMessage(objectkey)
- })
+ }),
 
 this. When (/^I enter text in "([^"]*)"$/,function(objectkey){
     return page.jcpenny.searchText(objectkey)
@@ -99,10 +100,27 @@ this.When (/^enter in the emailaddress "([^"]*)"$/,function(objectkey){
 
 this. Then (/^a success message will be displayed on clicking "([^"]*)"$/,function(objectkey){
     return page.jcpenny.clickElement(objectkey)
+}),
 
+this.When (/^I click on "([^"]*)"$/,function(objectkey){
+    return page.jcpenny.clickElement(objectkey)
+}),
+
+this.Then (/^I should be navigated to "([^"]*)"$/,function(objectkey){
+    return page.jcpenny.elementExists(objectkey)
+}),
+
+this.When (/^enter in the email field "([^"]*)"$/,function(objectkey){
+    return page.jcpenny.inputUserName(objectkey)
+}),
+
+this.When (/^enter in the password field my "([^"]*)"$/,function(objectkey){
+    return page.jcpenny.inputPW(objectkey)
+}),
+
+this.When (/^click the red button "([^"]*)"$/,function(objectkey){
+    return page.jcpenny.clickElement(objectkey)
 })
-    
-
 
 
 
