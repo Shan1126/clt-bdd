@@ -27,7 +27,6 @@ module.exports = {
         var selector = page.jootza.elements['username']; // //*[@id="login-username relate-pos"]
         await driver.sleep(2000); // in millseconds 1000ms = 1 second
         return driver.findElement(selector).sendKeys(val);
-
     },
     inputPassword: async function(val) {
         // val --> johndoe
