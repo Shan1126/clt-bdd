@@ -29,7 +29,7 @@ Feature:As a jcpenny customer I wanted to verify the home screen
         And click on the "search"
         Then I should see "storesNearMe"
         
-    @jcpenny @createAccount
+    @jcpenny @createAnAccount
     Scenario:As a customer I should be able to create an account.
         Given I am on the jcpenny website
         When I click on the "signin"
