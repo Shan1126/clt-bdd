@@ -5,4 +5,3 @@
   - npm install --chromedriver_skip_download=true
 - execute the below command 
   - node ./node_modules/selenium-cucumber-js/index.js -s ./step-definitions
- 
