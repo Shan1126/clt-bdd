@@ -247,6 +247,7 @@ module.exports = {
      *      helpers.scrollToElement(webElement);
      */
     scrollToElement: function (element) {
+        console.log("helper"+ element);
         return driver.executeScript('return arguments[0].scrollIntoView(false);', element);
     },
 

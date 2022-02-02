@@ -1,27 +1,18 @@
 module.exports = function () {
 
-    this.Given('I navigate to pranascience website', function () {
+    this.Given('I am at pranascience portal', function () {
         return helpers.loadPage(page.pranaScience.url);
     });
-
-    this.When(/^I click pranaRegister "([^"]*)"$/, function (objectKey) {
+    this.When(/^I click "([^"]*)"$/, function (objectKey) {
         return page.pranaScience.clickElement(objectKey);
     });
-
-    this.When(/^Enter  pranaUsername "([^"]*)"$/, function (objKey1) {
-        return page.pranaScience.inputUserName(objKey1);
+    this.When(/^I enter "([^"]*)" "([^"]*)"$/, function (objectKey) {
+        return page.pranaScience.inputTextBoxData(objectKey);
     });
-
-    this.When(/^Enter  pranaEmail "([^"]*)"$/, function (objectKey) {
-        return page.pranaScience.inputEmail(objectKey);
+    this.When(/^I select "([^"]*)" "([^"]*)"$/, function (objectKey) {
+        return page.pranaScience.selectDropDown(objectKey);
     });
-    this.When(/^Enter  pranaPassword "([^"]*)"$/, function (objectKey) {
-        return page.pranaScience.inputPassword(objectKey);
-    });
-    this.When(/^Confirm repranaPassword "([^"]*)"$/, function (objectKey) {
-        return page.pranaScience.inputConfirmpassword(objectKey);
-    });
-    this.Then(/^Click the register  "([^"]*)"$/, function (objectKey) {
-        return page.pranaScience.clickElement(objectKey);
+    this.Then(/^I want to see "([^"]*)"$/, function (objectKey) {
+        return page.pranaScience.elementExists(objectKey);
     });
 };
