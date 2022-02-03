@@ -43,7 +43,8 @@ module.exports = {
         resetPassword:'/html/body/app-root/app-reset-password/section/div/div/div[1]/div/div/h4',
         sendCode:'/html/body/app-root/app-reset-password/section/div/div/div[1]/div/div/form/div/div[3]/button',
         Code:'//*[@formcontrolname="countryCode"]',
-        list:'/html/body/app-root/app-reset-password/section/div/div/div[1]/div/div/form/div/div[1]/div/select/option[2]'
+        list:'/html/body/app-root/app-reset-password/section/div/div/div[1]/div/div/form/div/div[1]/div/select/option[2]',
+        
 
 
 

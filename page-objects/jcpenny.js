@@ -37,7 +37,7 @@ const helpers = require("../runtime/helpers");
         babyKidsGirls:'//*[@id="gallery-title"]/h1',
         babyKidsBoy:'//*[@id="gallery-title"]/h1',
         womenShoes:'//*[@id="gallery-title"]/h1',
-       
+               
 
     },
 

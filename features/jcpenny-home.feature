@@ -78,3 +78,6 @@ Feature:As a jcpenny customer I wanted to verify the home screen
         |tester123@yahoo.com          | Adhithya15 |
         |test123@gmail.com            | Janani09   |
         |testing@outlook.com          | Password   | 
+
+       
+
