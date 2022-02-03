@@ -248,12 +248,7 @@ module.exports = {
      *      helpers.scrollToElement(webElement);
      */
     scrollToElement: function (element) {
-<<<<<<< HEAD
-        console.log("helper"+ element);
-        return driver.executeScript('return arguments[0].scrollIntoView(false);', element);
-=======
         return driver.executeScript('return arguments[0].scrollIntoView(true);', element);
->>>>>>> upstream/develop-raji
     },
 
     /**
