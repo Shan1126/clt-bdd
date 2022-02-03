@@ -32,14 +32,14 @@ module.exports = {
 
     inputTextBoxData: async function (textboxElementName, value) {
         var selector = page.rprana.elements[textboxElementName];
-        await driver.sleep(2000); // in millseconds 1000ms = 1 second
+        await driver.sleep(2000); 
         return driver.findElement(By.xpath(selector)).sendKeys(value);
     },
 
 
     selectDropDown: async function (selectName, value) {
         var selector = page.rprana.elements[selectName];
-        await driver.sleep(2000); // in millseconds 1000ms = 1 second
+        await driver.sleep(2000); 
         var element = driver.findElement(By.xpath(selector));
         return helpers.selectDropdownValueByVisibleText(selector, value);
     },
