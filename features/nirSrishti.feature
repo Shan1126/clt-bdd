@@ -20,6 +20,6 @@ Feature: As a customer of Srishtiusa i wanted to register
     And I Enter Tax ID as "ABCD123"
     And I Enter Comment as "Great to join"
     And I Click on "Register"
-    Then I will see "LoginError"
+    Then I willbe seeing "LoginError"
     
 

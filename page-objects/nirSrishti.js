@@ -121,8 +121,10 @@ module.exports = {
 
     },
 
-
-
-
+    elementExists: async function (objectKey14) {
+        var selector = page.nirSrishti.elements[objectKey14];
+        await driver.sleep(5000);
+        return driver.findElement(By.xpath(selector));
+    }
 
 };

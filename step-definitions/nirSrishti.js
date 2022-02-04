@@ -80,7 +80,7 @@ module.exports = function () {
         return page.nirSrishti.clickElement(objectKey13);
     });
 
-    this.Then(/^I will see "([^"]*)"$/, function (objectKe14) {
+    this.Then(/^I willbe seeing "([^"]*)"$/, function (objectKey14) {
         return page.nirSrishti.elementExists(objectKey14);
     });
 
