@@ -75,6 +75,6 @@ Scenario Outline:Customer clicks to multiple sections
     Then I should be navigating to the "<NavigatingPage>"
     Examples:
     | SectionName                     | NavigatingPage            |
-    | UpcomingSATDatesAndDeadlines    | gettingScores             |
-    | standOutEarnAndSave             | gettingCreditAndPlacement |
-    | unlockScholarshipMatches        | welcomeBack               |
+    #| UpcomingSATDatesAndDeadlines    | gettingScores             |
+    #| standOutEarnAndSave             | gettingCreditAndPlacement |
+    #| unlockScholarshipMatches        | welcomeBack               |
