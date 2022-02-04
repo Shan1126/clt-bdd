@@ -55,8 +55,8 @@ module.exports = function () {
         return page.nirSrishti.inputCity(objectKey8);
     });
 
-    this.When(/^I select Country as "([^"]*)" "([^"]*)"$/, function (Name, Key) {
-        return page.nirSrishti.selectDropDown(Name, Key);
+    this.When(/I Select "([^"]*)" "([^"]*)"$/, function (eleName, objKey1) {
+        return page.nirSrishti.selectDropDown(eleName, objKey1);
     });
 
     this.When(/^I Enter Zip as "([^"]*)"$/, function (objectKey9) {
@@ -74,6 +74,14 @@ module.exports = function () {
 
     this.When(/^I Enter Comment as "([^"]*)"$/, function (objectKey12) {
         return page.nirSrishti.inputComments(objectKey12);
+    });
+
+    this.When(/^I Click on "([^"]*)"$/, function (objectKey13) {
+        return page.nirSrishti.clickElement(objectKey13);
+    });
+
+    this.Then(/^I will see "([^"]*)"$/, function (objectKe14) {
+        return page.nirSrishti.elementExists(objectKey14);
     });
 
 

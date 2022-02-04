@@ -18,11 +18,13 @@ module.exports = {
         Address: By.name('shipping_address'),
         Suite: By.name('shipping_address2'),
         City: By.name('shipping_city'),
-        Country: By.name('shipping_country'),
+        State: '//*[@id="spanState"]/select',
         Zip: By.name('shipping_zip'),
         Phone: By.name('shipping_phone'),
         TaxID: By.name('tax_id'),
         Comments: By.name('comments'),
+        Register: '//*[@id="registrationform"]/div[3]/div/div[2]/button',
+        LoginError: '/html/body/div/section[2]/div/h1',
 
     },
     clickElement: async function (objectKey) {
@@ -85,10 +87,10 @@ module.exports = {
 
     },
 
-    selectDropDown: async function (Country, value) {
-        var selector = page.nirSrishti.elements[Country];
+    selectDropDown: async function (selectName, value) {
+        var selector = page.nirSrishti.elements[selectName];
         await driver.sleep(2000); 
-        var element = driver.findElement(By.name(selector));
+        var element = driver.findElement(By.xpath(selector));
         return helpers.selectDropdownValueByVisibleText(selector, value);
     },
 
@@ -118,6 +120,8 @@ module.exports = {
         return driver.findElement(selector).sendKeys(val);
 
     },
+
+
 
 
 

@@ -11,12 +11,15 @@ Feature: As a customer of Srishtiusa i wanted to register
     And I Enter First Name as "Naomi"
     And I Enter Last Name as "Smith"
     And I Enter Company as "ABCDEFGH"
-    And I Enter Address as "8525 Floyd Curl"
+    And I Enter Address as "8000 Floyd Curl"
     And I Enter Suite as "1025"
     And I Enter City as "Austin"
-    And I select Country as "Country" "United States"
+    And I Select "State" "Texas"
     And I Enter Zip as "78712"
     And I Enter Phone as "1234567891"
     And I Enter Tax ID as "ABCD123"
     And I Enter Comment as "Great to join"
+    And I Click on "Register"
+    Then I will see "LoginError"
+    
 
