@@ -67,5 +67,14 @@ Scenario:As a user I should not be able to reset username by giving an unregiste
     And I enter "emailAddress" "testerraj@gmail.com"
     And I click on the link "send"
     Then I should be able to see the "error"
-        
 
+@collegeBoard @navigation
+Scenario Outline:Customer clicks to multiple sections
+    Given I am on the collegeboard website
+    When I click on the link "<SectionName>"
+    Then I should be navigating to the "<NavigatingPage>"
+    Examples:
+    | SectionName                     | NavigatingPage            |
+    | UpcomingSATDatesAndDeadlines    | gettingScores             |
+    | standOutEarnAndSave             | gettingCreditAndPlacement |
+    | unlockScholarshipMatches        | welcomeBack               |

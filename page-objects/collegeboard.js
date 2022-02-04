@@ -61,7 +61,14 @@ elements:{
     next:'//button[@name="resetPassword"]',
     yourAnswer:'//*[@id="security"]',
     Next:'//button[@name="verifyPassword"]',
-    createANewPassword:'//*[@id="#content"]/div/div/div[1]/div/div/div[1]/div/h2'
+    createANewPassword:'//*[@id="#content"]/div/div/div[1]/div/div/div[1]/div/h2',
+    UpcomingSATDatesAndDeadlines:'//*[@id="cb-cta_s"]/ul[1]/li[1]/a/div[2]/h4',
+    gettingScores:'//*[@id="block-apricot-theme-content"]/div[1]/div/div/div/div/div/h1',
+    standOutEarnAndSave:'//*[@id="cb-cta_s"]/ul[1]/li[2]/a/div[2]/h4',
+    gettingCreditAndPlacement:'//*[@id="block-welcomemat"]/div/div/div/div/div/h1',
+    unlockScholarshipMatches:'//*[@id="cb-cta_s"]/ul[1]/li[3]/a/div[2]/h4',
+    welcomeBack:'//*[@id="#content"]/div/div/div[1]/div/div/div[1]/div/h2'
+
    
 
 },

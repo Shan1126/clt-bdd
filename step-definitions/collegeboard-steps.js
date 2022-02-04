@@ -31,6 +31,10 @@ this.Then (/^I should be able to sign up on clicking the "([^"]*)"$/,function(ob
 
 this.Then (/^I should be able to see the "([^"]*)"$/,function(objectkey){
     return page.collegeboard.elementExists(objectkey)
+}),
+
+this.Then (/^I should be navigating to the "([^"]*)"$/,function(objectkey){
+    return page.collegeboard.elementExists(objectkey)
 })
 
 
