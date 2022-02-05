@@ -37,7 +37,7 @@ module.exports = {
     inputTextBoxData: async function (textboxElementName, value) {
 >>>>>>> develop-raji
         var selector = page.rprana.elements[textboxElementName];
-        await driver.sleep(2000); 
+        await driver.sleep(2000); // in millseconds 1000ms = 1 second
         return driver.findElement(By.xpath(selector)).sendKeys(value);
     },
 
@@ -49,7 +49,7 @@ module.exports = {
     selectDropDown: async function (selectName, value) {
 >>>>>>> develop-raji
         var selector = page.rprana.elements[selectName];
-        await driver.sleep(2000); 
+        await driver.sleep(2000); // in millseconds 1000ms = 1 second
         var element = driver.findElement(By.xpath(selector));
         return helpers.selectDropdownValueByVisibleText(selector, value);
     },
