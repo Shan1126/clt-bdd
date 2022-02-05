@@ -64,9 +64,9 @@ Scenario:As a user I should receive a email to reset my username on entering val
         When I click on the link "forgotPassword"
         And I enter "UserName" "Adhithya2006"
         And I enter "Email" "kanak.raj@gmail.com"
-        And I click on the link "next"
-        And I enter "yourAnswer" "June 2008"
         And I click on the link "Next"
+        And I enter "yourAnswer" "June 2008"
+        And I click on the link "NEXT"
         Then I should be able to see the "createANewPassword"
 
 @collegeBoard @forgotUserName @invalidCredentials 
