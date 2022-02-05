@@ -1,21 +1,25 @@
-Feature: As a user of pranascience I want to test the function of Register page
 
-@registerPranaScience
-Scenario: User is displayed with the pranaScience home page
-Given I am on pranaScience portal
-When I click on "signInButton"
-Then I should see "signInPage"
-When I click on "signUpButton"
-Then I should see "signUpPage"
-When I enter firstName "artrathi"
-And I enter lastName "Rajaram"
-And I enter countryCode "+1"
-And I enter mobileNumber "1233433434"
-And I enter email "abc@gmail.com"
-And I enter password "abc123"
-And I enter confirmPassword "abc123"
-And I enter gender "female"
-And I enter ageRange "35-45"
-And I click on "registerButton"
-Then I should see "verificationPage"
+Feature: As a PranaScience customer, I want to be able to navigate to Sign-up Page, so that I can Register my account.
 
+     @signup
+    Scenario: Customer is displayed with pranascience landing page
+        Given I navigate Pranascience portal
+        When I press "signinBtn"
+        And I press "signupBtn"
+        Then I want to see "signupPage"
+     @info
+    Scenario: Customer tries to enter Signup information
+        Given I am at pranascience portal
+        When I press "signinBtn"
+        And I press "signupBtn"
+        And I enter "fName" "Ani"
+        And I enter "lName" "kat"
+        And Select option "countryCode" "+91"
+        And I enter "mobileNumber" "1234567890"
+        And I enter "emailId" "ani@abc.com"
+        And I enter "passWord" "password123"
+        And I enter "confirmPassword" "password123"
+        And I press "optionFemale"
+        And Select option "ageRange" "25-35"
+        And I press "registerBtn"
+        Then The page displays "emailExists"
