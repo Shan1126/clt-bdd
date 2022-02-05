@@ -22,26 +22,34 @@ module.exports = {
         EmailExists: '/html/body/app-root/app-auth-signup/section/div/div/div[1]/div/div/form/div/div[10]/div'
     },
 
-  clickElement: async function (objectKey) {
-       
+    clickElement: async function (objectKey) {
+
         var selector = page.rprana.elements[objectKey];
         await driver.sleep(2000);
         var element = driver.findElement(By.xpath(selector));
         return driver.executeScript('return arguments[0].click();', element);
     },
 
+<<<<<<< HEAD
     inputTextBoxData: async function(textboxElementName, value)//input data
     {
+=======
+    inputTextBoxData: async function (textboxElementName, value) {
+>>>>>>> develop-raji
         var selector = page.rprana.elements[textboxElementName];
-        await driver.sleep(2000); // in millseconds 1000ms = 1 second
+        await driver.sleep(2000); 
         return driver.findElement(By.xpath(selector)).sendKeys(value);
     },
 
 
+<<<<<<< HEAD
     selectDropDown: async function (selectName, value)//drop down menu
     {
+=======
+    selectDropDown: async function (selectName, value) {
+>>>>>>> develop-raji
         var selector = page.rprana.elements[selectName];
-        await driver.sleep(2000); // in millseconds 1000ms = 1 second
+        await driver.sleep(2000); 
         var element = driver.findElement(By.xpath(selector));
         return helpers.selectDropdownValueByVisibleText(selector, value);
     },

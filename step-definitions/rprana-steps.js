@@ -9,13 +9,13 @@ module.exports = function () {
     });
 
     this.When(/^I give "([^"]*)" "([^"]*)"$/, function (eleName, objKey1) {
-    return page.rprana.inputTextBoxData(eleName, objKey1);
+        return page.rprana.inputTextBoxData(eleName, objKey1);
     });
 
     this.When(/^I select "([^"]*)" "([^"]*)"$/, function (eleName, objKey1) {
         return page.rprana.selectDropDown(eleName, objKey1);
     });
-    
+
     this.When(/^I choose gender "([^"]*)"$/, function (objKey1) {
         return page.rprana.clickElement(objKey1);
     });
