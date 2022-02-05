@@ -94,15 +94,6 @@ clickElement:async function(objectkey,value){
     return driver.findElement(By.xpath(input)).click()
 },
 
-clickCheckBox:async function(objectkey,value){
-    var selector = page.collegeboard.elements[objectkey]
-    var input =page.collegeboard.elements[value]
-    await driver.sleep(2000) 
-    driver.findElement(By.xpath(selector))
-    return driver.findElement(By.xpath(input)).click()
-
-},
-
 elementExists:async function(objectkey){
     var selector =page.collegeboard.elements[objectkey]
     await driver.sleep(2000)

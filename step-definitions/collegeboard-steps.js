@@ -21,10 +21,6 @@ this.When (/^I give the "([^"]*)" "([^"]*)"$/,function(objectkey,value){
     return page.collegeboard.clickElement(objectkey,value)
 }),
 
-this.When (/^I click the checkbox "([^"]*)" "([^"]*)"$/,function(objectkey,value){
-    return page.collegeboard.clickCheckBox(objectkey,value)
-}),
-
 this.Then (/^I should be able to sign up on clicking the "([^"]*)"$/,function(objectkey){
     return page.collegeboard.clickButton(objectkey)
 }),
