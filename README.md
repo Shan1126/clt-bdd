@@ -4,4 +4,13 @@
 - execute the below npm command
   - npm install --chromedriver_skip_download=true
 - execute the below command 
+<<<<<<< HEAD
   - node index.js -s ./step-definitions
+=======
+<<<<<<< HEAD
+  - node ./node_modules/selenium-cucumber-js/index.js -s ./step-definitions
+# rajinew
+=======
+  - node index.js -s ./step-definitions
+>>>>>>> develop-raji
+>>>>>>> upstream/master
