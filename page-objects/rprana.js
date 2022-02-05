@@ -30,5 +30,4 @@ module.exports = {
         return driver.executeScript('return arguments[0].click();', element);
     },
 
-    inputTextBoxData: async function (textboxElementName, value) {
-        var selector = page.rprana.elements[textboxElementName];
+}
