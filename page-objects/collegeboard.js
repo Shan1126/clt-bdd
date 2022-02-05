@@ -67,7 +67,8 @@ elements:{
     standOutEarnAndSave:'//*[@id="cb-cta_s"]/ul[1]/li[2]/a/div[2]/h4',
     gettingCreditAndPlacement:'//*[@id="block-welcomemat"]/div/div/div/div/div/h1',
     unlockScholarshipMatches:'//*[@id="cb-cta_s"]/ul[1]/li[3]/a/div[2]/h4',
-    welcomeBack:'//*[@id="#content"]/div/div/div[1]/div/div/div[1]/div/h2'
+    welcomeBack:'//*[@id="#content"]/div/div/div[1]/div/div/div[1]/div/h2',
+    nameInTheHeader:'//span[@class="OHYx4pfmhf0MrQbqKGyX1"]'
 
    
 

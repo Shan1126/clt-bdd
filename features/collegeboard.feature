@@ -36,10 +36,19 @@ Scenario:As a user I wanted to sign up for the College board.
 Scenario:As a user I should be displayed error message when I try to login with invalid credentials 
     Given I am on the collegeboard website
     When I click on the link "signin"
-    And I enter "uName" "Adhithya06"
+    And I enter "uName" "Adhithya"
     And I enter "PW" "Password123!"
     And I click on the link "submit"
     Then I should be able to see the "errorMessage"
+
+@collegeBoard @logingIn @successfullyLoggingin
+Scenario:As a user I should be displayed error message when I try to login with invalid credentials
+    Given I am on the collegeboard website
+    When I click on the link "signin"
+    And I enter "uName" "Adhithya2006"
+    And I enter "PW" "Password123!"
+    And I click on the link "submit"
+    Then I should be able to see the "nameInTheHeader"
 
 @collegeBoard @forgotUserName @validCredentials 
 Scenario:As a user I should receive a email to reset my username on entering valid registered email in the forgot username.
