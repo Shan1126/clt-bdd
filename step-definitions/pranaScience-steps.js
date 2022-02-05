@@ -1,6 +1,6 @@
 module.exports = function () {
 
-    this.Given('I am at pranascience portal', function () {
+    this.Given('I navigate Pranascience portal', function () {
         return helpers.loadPage(page.pranaScience.url);
     });
     this.When(/^I press "([^"]*)"$/, function (objectKey) {
@@ -9,10 +9,10 @@ module.exports = function () {
     this.When(/^I enter "([^"]*)" "([^"]*)"$/, function (eleName, objKey) {
         return page.pranaScience.inputTextBoxData(eleName, objKey);
     });
-    this.When(/^I select "([^"]*)" "([^"]*)"$/, function (eleName,objKey1) {
+    this.When(/^Select option"([^"]*)" "([^"]*)"$/, function (eleName,objKey1) {
         return page.pranaScience.selectDropDown(eleName, objKey1);
     });
-    this.Then(/^I want to see "([^"]*)"$/, function (objectKey) {
+    this.Then(/^The page displays "([^"]*)"$/, function (objectKey) {
         return page.pranaScience.elementExists(objectKey);
     });
 };

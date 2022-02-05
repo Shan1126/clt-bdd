@@ -2,7 +2,7 @@ Feature: As a PranaScience customer, I want to be able to navigate to Sign-up Pa
 
      @signup
     Scenario: Customer is displayed with pranascience landing page
-        Given I am at pranascience portal
+        Given I navigate Pranascience portal
         When I press "signinBtn"
         And I press "signupBtn"
         Then I want to see "signupPage"
@@ -13,12 +13,12 @@ Feature: As a PranaScience customer, I want to be able to navigate to Sign-up Pa
         And I press "signupBtn"
         And I enter "fName" "Ani"
         And I enter "lName" "kat"
-        And I select "countryCode" "+91"
+        And Select option "countryCode" "+91"
         And I enter "mobileNumber" "1234567890"
         And I enter "emailId" "ani@abc.com"
         And I enter "passWord" "password123"
         And I enter "confirmPassword" "password123"
         And I press "optionFemale"
-        And I select "ageRange" "25-35"
+        And Select option "ageRange" "25-35"
         And I press "registerBtn"
-        Then I want to see "emailExists"
+        Then The page displays "emailExists"
