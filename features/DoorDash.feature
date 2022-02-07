@@ -1,6 +1,6 @@
-Feature: As a doordash user, I want to test user signup page
+Feature: As a doordash user, I want to test user SignIn/SignUp page
 @doorDash @SignIn
-Scenario: Check SignUp is successful 
+Scenario: Check SignIn is successful 
    Given I am on the doordash portal
    When In DoorD I click on "SignIn"
    Then In DoorD I should see "SignUpPage"
