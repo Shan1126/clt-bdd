@@ -1,4 +1,4 @@
-Feature: As a doordash user, I want to test user signup page
+Feature: As a doordash user, I want to test user SignIn/Signup page
 @doorDash @SignIn
 Scenario: Check SignUp is successful 
    Given I am on the doordash portal
