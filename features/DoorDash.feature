@@ -1,5 +1,5 @@
 Feature: As a doordash user, I want to test user signup page
-@doorDash @search
+@doorDash @SignIn
 Scenario: Check SignUp is successful 
    Given I am on the doordash portal
    When In DoorD I click on "SignIn"
