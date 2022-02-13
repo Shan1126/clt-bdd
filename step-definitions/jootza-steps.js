@@ -27,5 +27,14 @@ module.exports = function () {
     this.Then(/^I should see the approver name as "([^"]*)"$/, function (value) {
         return page.jootza.verifyApproverName(value);
     });
+    this.When(/^I enter the inputs for login$/, async function (table) {
+        const fields = table.rows();
+        for (i = 0; i < fields.length; i++) {
+            page.jootza.inputElement(fields[i][0], fields[i][1]);
+        };
+        await driver.sleep(3000);
+        return;
+    });
+
 
 };

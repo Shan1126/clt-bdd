@@ -39,6 +39,12 @@ module.exports = {
         return driver.findElement(selector).sendKeys(val);
 
     },
+    inputElement: async function(name,val) {
+        var selector = page.jootza.elements[name]; 
+        await driver.sleep(2000);
+        return driver.findElement(selector).sendKeys(val);
+
+    },
     elementExists: async function(objectKey) {
         // eslint-disable-next-line no-console
         var selector = page.jootza.elements[objectKey];
@@ -46,7 +52,6 @@ module.exports = {
         await driver.sleep(5000);
         return driver.findElement(By.xpath(selector));
     },
-
     loginPortal: async function(username) {
         await helpers.loadPage(page.jootza.url);
         await this.inputUserName(username)
