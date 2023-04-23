@@ -248,11 +248,7 @@ module.exports = {
      *      helpers.scrollToElement(webElement);
      */
     scrollToElement: function (element) {
-<<<<<<< HEAD
-        return driver.executeScript('return arguments[0].scrollIntoView(false);', element);
-=======
         return driver.executeScript('return arguments[2].scrollIntoView(true);', element);
->>>>>>> 90947936c2a70d6379f1d454c490fb264ca0674b
     },
 
     /**
